@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<main>
+<body>
+    <header>
+        <div>Reviews</div>
+    </header>
+    <section>
+    <form id="form">
+    
+            <label for="clasificacion">Clasificacion</label>
+            <select name="clasificacion" id="clasificacion">
+            <option value="0" disabled selected>seleccionar</option>    
+            <option value="pelicula">pelicula</option>
+            <option value="serie">serie</option>
+            <option value="libro">libro</option>
+            </select>
+        
+            <label for="titulo">Titulo</label>
+            <input type="text" name="titulo" id="titulo">
+        
+            <label for="ranking">Ranking</label>
+            <select name="ranking" id="ranking">
+            <option value="0" disabled selected>seleccionar</option>   
+            <option value="1">1 muy mala</option>
+            <option value="2">2 mala</option>
+            <option value="3">3 normal</option>
+            <option value="4">4 buena</option>
+            <option value="5">5 muy buena</option>
+            </select>
+        
+            <label for="date">Fecha</label>
+            <input type="date" name="date" id="date">
+       
+            <label for="review">Reseña</label>
+            <textarea name="review" id="review" cols="30" rows="10"></textarea>
+            <div>
+            <button type="submit" id="add">Agregar reseña</button>
+            
+            </div>
+         
+    </form>
+    </section>
+     
+   <section class="data">
+    <table>
+        <thead>
+            <tr>
+                <th>Clasificacion</th>
+                <th>Titulo</th>
+                <th>Ranking</th>
+                <th>Fecha</th>
+                <th>Reseña</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+
+        </tbody>
+    </table>
+   
+   </section>
+
+</main>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
