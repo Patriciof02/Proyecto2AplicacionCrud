@@ -5,12 +5,20 @@
 }
 
 header{
-    background-color: #367CF0;
+    background-color: #0B5BA1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
     padding: 5px 5px;
+    color: white;
+    text-shadow: 3px 3px 3px rgb(28, 28, 143);
+}
+
+
+
+header img{
+    width: 80px;
 }
 form{
     margin: 20px;
@@ -26,14 +34,165 @@ label input{
 input select {
     margin-bottom: 10px;
 }
-div{
+
+
+body{
+    background-image: url(../images/peakpx.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.cuadro1{
     display: flex;
-    margin: 15px;
-    gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #0B5BA1;
+    border-radius: 10px;
+    width: 400px;
+    padding: 5px;
+    margin:10px;
+}
+.cuadro1 label {
+    color: white;
+
+}
+.cuadro1 p{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.data table {
+   color: white;
+   background-color: #0B5BA1;
+   border-radius: 10px;
+   margin: 30px;
+   padding: 10px;
+
+}
+
+td th {
+    background-color: #0B5BA1;
+    padding: 5px;
+    margin:5px;
+}
+
+.data{
+    display: flex;
+    align-items: center;
     justify-content: center;
+}
+.edit {
+    color: white;
+    background-color: rgb(75, 75, 171);
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 1px 10px rgb(31, 31, 31);
+    margin: 5px;
+}
+.delete{
+    color: white;
+    background-color: rgb(139, 42, 42);
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 1px 10px rgb(31, 31, 31);
+    margin: 5px;
+}
+#add {
+    margin-top: 10px;
+    border: 1px;
+    color: white;
+    background-color: orange;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 1px 15px rgb(31, 31, 31);
+}
+#section {
+    background-color: white;
+    color: white;
+}
+.cuadro2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #0B5BA1;
+    color: white;
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.cuadro2 li {
+    margin-top: 10px;
+}
+#refresh{
+    background-color: orange;
+    margin-top: 10px;
+    border: 1px;
+    color: white;
+    background-color: orange;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 1px 15px rgb(31, 31, 31);
 
 }
-table, td, th{
-    border: 1px solid black;
+
+.principal{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 
+.footer img {
+    height: 40px;
+    padding: 10px;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2c72b0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.footer div{
+    border-top: 2px;
+}
+.footer h3 {
+    padding: 10px;
+    text-align: left;
+    color: rgb(212, 219, 240);
+}
+
+
+
+
+
+@media (max-width: 750px) {
+
+    .principal{
+        display: flex;
+        flex-wrap: wrap;
+    }
+   
+}
+@media (max-width: 600px) {
+.data table{
+    margin: 5px;
+    padding: 5px;
+}
+}
+
+@media (max-width: 450px) {
+    .data {
+       max-width: 450px;
+       font-size: 10px;
+    }
+    }

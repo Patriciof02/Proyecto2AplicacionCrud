@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recomendador</title>
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <main>
-<body>
     <header>
-        <div>Reviews</div>
+        <img src="./assets/images/libros2.png" alt="logoLibros">
+        <h1>Recomendador</h1>
+        <img src="./assets/images/pelicula.png" alt="logoPeliculas">
     </header>
-    <section>
+<body>
+    <section class="principal">
+    <section class="cuadro1">
     <form id="form">
+             <p>Aquí podrás registrar películas, series o libros que hayas visto para compartir y recomendar los mejores títulos.</p>
+
     
-            <label for="clasificacion">Clasificacion</label>
+            <label for="clasificacion">Clasificación</label>
             <select name="clasificacion" id="clasificacion">
             <option value="0" disabled selected>seleccionar</option>    
-            <option value="pelicula">pelicula</option>
-            <option value="serie">serie</option>
-            <option value="libro">libro</option>
+            <option value="pelicula">Película</option>
+            <option value="serie">Serie</option>
+            <option value="libro">Libro</option>
             </select>
         
-            <label for="titulo">Titulo</label>
+            <label for="titulo">Título</label>
             <input type="text" name="titulo" id="titulo">
         
             <label for="ranking">Ranking</label>
@@ -40,7 +45,7 @@
             <input type="date" name="date" id="date">
        
             <label for="review">Reseña</label>
-            <textarea name="review" id="review" cols="30" rows="10"></textarea>
+            <textarea name="review" id="review" cols="30" rows="5"></textarea>
             <div>
             <button type="submit" id="add">Agregar reseña</button>
             
@@ -48,13 +53,24 @@
          
     </form>
     </section>
-     
+    <section class="cuadro2">
+        <h2>TOP-5</h2>
+       <div id="top-5">
+
+       </div>
+       <button id="refresh">Actualizar</button>
+
+
+
+
+    </section>
+     </section>
    <section class="data">
     <table>
         <thead>
             <tr>
-                <th>Clasificacion</th>
-                <th>Titulo</th>
+                <th>Clasificación</th>
+                <th>Título</th>
                 <th>Ranking</th>
                 <th>Fecha</th>
                 <th>Reseña</th>
@@ -71,8 +87,19 @@
 
 </main>
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./main.js"></script>
+
+  <footer class="footer">
+           <div>
+                <img src="./assets/images/facebook.png" alt="logo facebook">
+                <img src="./assets/images/instagram2.png" alt="logo instagram">
+                <img src="./assets/images/whatsapp.png" alt="logo whatsapp">
+            </div>
+            <div>
+                <h3>Gracias por compartir</h3>
+                
+            </div>
+  </footer>  
 </body>
 </html>
