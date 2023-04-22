@@ -178,6 +178,7 @@ function clearForm() {
   }
 
 function top5 (){
+let reseñas =""
 reseñas = JSON.parse(localStorage.getItem('reseñas')) 
 function ordenar() {
   return reseñas.sort(function(a, b) {
