@@ -172,14 +172,14 @@ function clearForm() {
     clearForm()
     editMode = false
     editionId = null
-    addButton.innerText = 'Agregar'
+    addButton.innerText = 'Agregar reseña'
 
     top5()
   }
 
 function top5 (){
-let reseñas =""
-reseñas = JSON.parse(localStorage.getItem('reseñas')) 
+
+reseñas = JSON.parse(localStorage.getItem('reseñas')) || [] 
 function ordenar() {
   return reseñas.sort(function(a, b) {
     return b.ranking - a.ranking;
