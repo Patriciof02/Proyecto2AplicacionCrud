@@ -24,6 +24,8 @@ function create (event) {
     createRow (reseña)
     clearForm()
     saveDataLS()
+    top5()
+   
 
     }
 
@@ -101,6 +103,7 @@ function clearForm() {
         reseñas = reseñas.filter((reseña) => reseña.id !== id)
 
         saveDataLS()
+        top5()
 
         Swal.fire(
           'Borrado!',
@@ -109,7 +112,7 @@ function clearForm() {
         )
       }
     })
-
+   
   }
 
   function readFromLS() {
@@ -170,10 +173,12 @@ function clearForm() {
     editMode = false
     editionId = null
     addButton.innerText = 'Agregar'
+
+    top5()
   }
 
 function top5 (){
-readFromLS()
+reseñas = JSON.parse(localStorage.getItem('reseñas')) 
 function ordenar() {
   return reseñas.sort(function(a, b) {
     return b.ranking - a.ranking;
@@ -193,12 +198,12 @@ function generarTop5() {
 }
 top5Element.innerHTML = generarTop5();
 
-}
-top5()
 
-let refresh = document.getElementById('refresh');
-refresh.addEventListener('click', _ => {
-            location.reload();
-})
+
+}
+
+
+
 
 readFromLS()
+top5()
